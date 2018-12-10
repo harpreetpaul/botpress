@@ -14,7 +14,7 @@
     "start": "cd ./out/bp && cross-env NODE_PATH=./ cross-env BP_MODULES_PATH=../../modules node index.js",
     "cmd": "yarn run gulp",
     "build": "yarn cmd build",
-    "postinstall": "gulp default",
+    "postinstall": "yarn run gulp",
     "watch": "yarn cmd watch",
     "package": "yarn cmd package",
     "test": "node_modules/.bin/jest -i --detectOpenHandles -c jest.config.js",
